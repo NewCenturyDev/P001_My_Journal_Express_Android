@@ -1,0 +1,200 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("/images/background.png");
+}
+
+header {
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: row;
+}
+
+ /* header의 로고 및 room 버튼 부분 */
+#left_h {
+    width: 37%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+header > #left_h > div{
+    height: 50px;
+}
+
+/* header의 room 영역 */
+#room {
+    display: flex;
+    flex-direction: row;
+}
+
+#room > div {
+    margin-left: 3%;
+}
+
+ /* room 버튼 디자인 부분 */
+#room > div > input {
+    margin-top: 10px;
+    margin-left: 8px;
+    background: none;
+    font-family: 'impact';
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+}
+
+#room > div > button {
+    margin-top: 10px;
+}
+
+ /* header의 검색 및 음악 및 설정 부분 */
+#center_h {
+    width: 55%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    left: 3%;
+    position: relative;
+}
+
+#center_h > #find {
+    width: 45%;
+}
+
+#center_h > div > button {
+    margin-top: 10px;
+}
+
+ /* header의 search 디자인 부분 */
+#center_h > div > form > input {
+    width: 90%;
+    color: white;
+    margin-top: 6px;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0 10px;
+    outline: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+#center_h > #music {
+    width: 30%;
+}
+
+#center_h > #set {
+    width: 10%;
+}
+
+#center_h > div > audio {
+    width: 95%;
+    outline: 0;
+    height: 30px;
+    margin-top: 8px;
+}
+
+ /* header의 사용자 버튼 */
+#right_h {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+#right_h > div {
+    margin-right: 7%;
+}
+
+#right_h > div > button {
+    margin-top: 7%;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 13px;
+    outline: 0;
+    background: none;
+}
+
+main {
+    height: 100%;
+}
+
+ /* profile에 커서 올릴 때 나타나는 프로필 */
+#mini_profile {
+    z-index: 1;
+    margin-top: 20px;
+    width: 13%;
+    height: 80px;
+    position: relative;
+    left: 85%;
+    background-color: white;
+    border: groove;
+    display: none;
+    grid-template-columns: 1.7fr 2fr;
+}
+
+#mini_profile > div {
+    text-align: center;
+}
+
+ /* 미니 프로필 사진 */
+#mini_profile > div > img {
+    margin-top: 10px;
+    width: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+ /* 미니 프로필의 이름, 아이디 부분 */
+ #mini_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mini_info > p {
+    margin: 0 auto;
+}
+
+#mini_name {
+    font-size: 14px;
+    color: gray;
+}
+
+/* 사진 등록 버튼 */
+#add {
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    left: 92%;
+    top: 85%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 15px; 
+}
+
+button {
+    background: none;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+b {
+    font-size: 15px;
+}

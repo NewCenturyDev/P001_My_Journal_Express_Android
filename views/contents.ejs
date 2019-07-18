@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>사진 전시회 서비스 - 내용 페이지</title>
+    <link rel="stylesheet" href="/stylesheets/contents.css"></link>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="left_h">
+            <div id="logo">
+                <a href="/">
+                    <img src="http://placehold.it/220x50">
+                </a>
+            </div>
+            <div id="room">
+                <div>
+                    <input type="button" value="Room #1">
+                </div>
+                <div>
+                    <input type="button" value="Room #2">
+                </div>
+                <div>
+                    <input type="button" value="Room #3">
+                </div>
+                <div>
+                   <button type="button"><img src="/images/setting.png" width="20px"></button>
+                </div>
+            </div>
+        </div>
+            <div id="center_h">
+                <div id="find">
+                    <form action="sub_search.html" method="post">
+                        <input type="text" name="search" placeholder="search">
+                    </form>
+                </div>
+                <div id="music">
+                    <audio autoplay controls src="/musics/Empty.mp3"></audio>
+                </div>
+                <div>
+                    <button type="button"><img src="/images/setting.png" width="20px"></button>
+                </div>
+            </div>
+        <div id="right_h">
+            <div>
+                <button type="button" id="logout">
+                    <img src="/images/logout.png" width="30px">
+                </button>
+            </div>
+            <div>
+                <button type="button" id="profile">
+                    <img src="/images/profile.png" width="30px">
+                </button>
+            </div>
+            <div>
+                <button type="button" id="people">
+                    <img src="/images/people.png" width="45px">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- profile에 커서 올릴 때 미니 프로필 -->
+        <div id="mini_profile">
+            <div>
+                <img src="/images/profile_img.jpg">
+            </div>
+            <div id="mini_info">
+                <p><b>1000peach</b></p>
+                <p id="mini_name">천승아</p>
+            </div>
+        </div>
+        <button id="add" type="button">
+            <img src="/images/add_icon.png" width="60px">
+        </button>
+    </main>
+</body>
+    <script src="/javascripts/contents.js"></script>
+</html>

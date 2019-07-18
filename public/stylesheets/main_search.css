@@ -1,0 +1,102 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("/images/background.png");
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: row;
+}
+
+#right_h {
+    width: 110px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 77%;
+}
+
+#right_h > div {
+    margin-right: 10%;
+}
+
+/* header의 사용자 버튼 */
+#right_h > div > button {
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    background: none;
+}
+
+/* header의 login 버튼 */
+#login {
+    margin-top: 5px;
+}
+
+/* header의 register 버튼 */
+#register {
+    margin-top: 9px;
+}
+
+main {
+    height: 100%;
+    display: block;
+}
+
+main > div {
+    margin: auto;
+}
+
+#logo {
+    margin-top: 50px;
+    width: 500px;
+    height: 150px;
+}
+
+form {
+    margin: auto;
+    margin-top: 40px;
+    width: 55%;
+}
+
+/* 검색 부분 */
+main > form > input {
+    height: 100px;
+    width: 90%;
+    border-radius: 30px;
+    border: solid;
+    border-color: lightgray;
+    font-size: 33px;
+    padding: 0 25px;
+    outline: 0;
+}
+
+/* 서비스 소개 부분 */
+#introduce {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#introduce > div {
+    width: 33%;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+img {
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사진 전시회 서비스 - 메인 페이지</title>
+    <link rel="stylesheet" href="/stylesheets/main_search.css"></link>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/">
+                <img src="http://placehold.it/220x50">
+            </a>
+        </div>
+        <div id="right_h">
+            <div>
+                <button id="login" type="button">
+                    <img src="/images/login.png" width="30px">
+                </button>
+            </div>
+            <div>
+                <button id="register" type="button">
+                    <img src="/images/register.png" width="43px">
+                </button>               
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div id="logo">
+            <img src="http://placehold.it/500x150" onclick="location.reload(true);">
+        </div>
+        <form action="sub_search.html" method="post">
+            <input type="text" name="" id="" placeholder="사진 또는 아이디를 검색하세요!">
+        </form>
+        <div id="introduce">
+            <div>
+                <img src="/images/photo.png" width="135px">
+                <p><b>나만의 전시회를 가져보세요!</b></p>
+                <p>다양한 사진, 배경, 음악으로<br>전시회를 꾸밀 수 있어요!</p>
+            </div>
+            <div>
+                <img src="/images/bulb.png" width="102px">
+                <p><b>간편하고 편리해요!</b></p>
+                <p>원하는 사진이나<br>친구를 빠르게 찾을 수 있어요!</p>
+            </div>
+            <div>
+                <img src="/images/sns.png" width="156px">
+                <p><b>다양한 회원들과 소통하세요!</b></p>
+                <p>원하는 회원을 구독할 수 있고,<br>쪽지를 보낼 수 있어요!!</p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/javascripts/main_search.js"></script>
+</html>

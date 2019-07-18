@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>사진 전시회 서비스 - 검색 페이지</title>
+    <link rel="stylesheet" href="/stylesheets/sub_search.css"></link>
+</head>
+<body>
+    <header>
+        <div id="left_h">
+            <a href="/">
+                <img src="http://placehold.it/220x50">
+            </a>
+        </div>
+        <form action="sub_search.html" method="post">
+            <input type="text" name="search" placeholder="search">
+        </form>
+        <div id="right_h">
+            <div>
+                <button type="button" id="logout">
+                    <img src="/images/logout.png" width="30px">
+                </button>
+            </div>
+            <div>
+                <button type="button" id="profile">
+                    <img src="/images/profile.png" width="30px">
+                </button>
+            </div>
+            <div>
+                <button type="button" id="people">
+                    <img src="/images/people.png" width="45px">
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div id="message">
+            <p><b>>> 추천 회원 목록입니다!</b></p>
+        </div>
+        <!--사용자 목록-->
+        <div id="user">
+            <div id="user_img">
+                <img src="/images/profile_img.jpg">
+            </div>
+            <div id="user_info">
+                <div>
+                    <p id="user_id">1000.peach</p>
+                </div>
+                <div id="user_status">
+                    <p><b style="font-size:18px;">천승아</b></p>
+                    <p id="pro_msg">웹 사진 전시회 서비스</p>
+                </div>
+                <div id="user_but">
+                    <div>
+                        <input type="button" value="이동 하기" onclick="location.href='contents.html'">
+                    </div>
+                    <div>
+                        <input type="button" value="구독 하기">
+                    </div>
+                    <div>
+                        <input type="button" value="쪽지 보내기">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+    <script src="/javascripts/sub_search.js"></script>
+</html>

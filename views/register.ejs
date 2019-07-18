@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>사진 전시회 서비스 - 회원가입</title>
+<link rel="stylesheet" href="/stylesheets/register.css"></link>
+
+<!-- 서버측과 통신하여 회원가입 양식 검증-->
+<%
+if(ecode == 1) {
+%>
+<script>alert('회원가입 양식의 모든 필드를 채워주셔야 합니다. 빈 칸은 허용되지 않습니다!');</script>
+<%
+}
+%>
+<%
+if(ecode == 2) {
+%>
+	<script>alert('"비밀번호" 필드와 "비밀번호 확인" 필드의 값이 서로 다릅니다!');</script>
+<%
+}
+%>
+<%
+if(ecode == 3) {
+%>
+	<script>alert('전화번호는 숫자만 입력하여 주십시오! ("-"는 생략해 주십시오.)');</script>
+<%
+}
+%>
+<%
+if(ecode == 4) {
+%>
+	<script>alert('이메일 양식이 올바르지 않습니다! ("example@service.com" 형식으로 입력해 주십시오)');</script>
+<%
+}
+%>
+<%
+if(ecode == 5) {
+%>
+	<script>alert('DB 오류. 나중에 다시 시도하세요.');</script>
+<%
+}
+%>
+
+</head>
+<body>
+
+	<header id="header">
+		<div id="logo">
+			<a href="/">
+				<img src="http://placehold.it/500x50">
+			</a>
+		</div>
+	</header>
+
+	<section>
+		<h2>Register</h2>
+		<form action="/register" method="post">
+			<input id="authid" type="text" name="id" placeholder="아이디"></input>
+			<input id="authpw" type="password" name="pw" placeholder="비밀번호"></input>
+            <input id="authpwck" type="password" name="pwck" placeholder="비밀번호 확인"></input>
+			<input id="authname" type="text" name="name" placeholder="성명"></input>
+			<input id="authnick" type="text" name="nick" placeholder="닉네임"></input>
+            <input id="authmail" type="text" name="mail" placeholder="이메일"></input>
+			<input id="authphone" type="text" name="phone" placeholder="전화번호"></input>
+            <div>
+				본 서비스에 회원가입할 경우 이용자는 <span onClick="showeula(1);">이용약관</span>과
+			</div>
+			<div>
+				<span onClick="showeula(2);">개인정보 수집 및 취급에 관한 약관</span>에 동의하는 것으로 간주합니다.
+			</div>
+            <br/>
+            <br/>
+			<button>회원가입</button>
+        </form>
+        <br/>
+		<a href="/login">로그인 &gt&gt</a>
+		<a href="/finder">ID / PW 찾기 &gt&gt</a>
+	</section>
+
+	<!-- 이용약관 모달창 -->
+	<article id="eula1">
+		<div>
+			<div onclick="closemodal();">X</div>
+			<p>이용약관 내용을 입력하십시오.</p>
+		</div>
+	</article>
+	<article id="eula2">
+		<div>
+			<div onclick="closemodal();">X</div>
+			<p>이용약관 내용을 입력하십시오.</p>
+		</div>
+	</article>
+	<script src="/javascripts/eula.js"></script>
+</body>
+</html>

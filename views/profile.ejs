@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="/stylesheets/profile.css">
+    </head>
+    <body>
+        <div class="nav">
+            <form class="search">
+                <input class="replytext_search" type="text" placeholder="search"></input> 
+            </form>
+            <div class="button_box"><button class="button" type="button">둘러보기</button></div>
+            <div class="profile"><p>profile</p></div>
+        </div>
+        <div class="box">
+            <div class="left_box">
+                <div class="button_box_1"><button class="button b1 1" type="button">정보 수정</button></div>
+                <div class="button_box_1"><button class="button b1 2" type="button">구독 수정</button></div>
+                <div class="button_box_1"><button class="button b1 3" type="button">쪽지함</button></div>
+                <div class="button_box_1"><button class="button b1 4" type="button">회원탈퇴</button></div>
+            </div>
+            <div class="right_box">
+                <!--정보 수정-->
+                <div class="myinfo" style="display: flex">
+                    <div class="Lpicture">
+                        <div class="picture"><img class="pictures" src="https://instagram.ficn6-1.fna.fbcdn.net/vp/466efc55594472ab9b9ab6e885b06825/5D72B7DC/t51.2885-15/e35/57009221_306777196917572_856435609160832386_n.jpg?_nc_ht=instagram.ficn6-1.fna.fbcdn.net"></div>
+                        <div class="picture_agree"><p>사진 변경</p></div>
+                    </div>
+                    <div class="info">
+                        <div class="id">
+                            <form class="id_box">
+                                    <input class="replytext_id" type="text" placeholder="아이디"></input> 
+                                </form>
+                        </div>
+                        <div class="name">
+                            <form class="name_box">
+                                    <input class="replytext_name" type="text" placeholder="이름"></input> 
+                                </form>
+                        </div>
+                        <div class="password">
+                            <form class="password_box">
+                                    <input class="replytext_password" type="text" placeholder="비밀번호"></input> 
+                                </form>
+                        </div>
+                        <div class="state">
+                            <form class="state_box">
+                                <input class="replytext_state" type="text" placeholder="상태 메시지"></input> 
+                            </form>
+                    </div>
+                        <div class="agree"><button class="button" type="button">수정</button></div>
+                    </div>
+                </div>
+                <!--구독 수정-->
+                <div class="sub" style="display: none">
+                    <div class="people">
+                        <div class="Spicture"><img class="pictures1" src="https://instagram.ficn6-1.fna.fbcdn.net/vp/466efc55594472ab9b9ab6e885b06825/5D72B7DC/t51.2885-15/e35/57009221_306777196917572_856435609160832386_n.jpg?_nc_ht=instagram.ficn6-1.fna.fbcdn.net"></div>
+                        <div class="subbox">
+                            <div class="nicname"><h1>IMNOOK</h1></div>
+                            <div class="realname"><h2>이민욱</h2></div>
+                            <div class="move"><button class="button" type="button">이동</button></div>
+                            <div class="remove"><button class="button" type="button">구독 삭제</button></div>
+                        </div>
+                    </div>
+                </div>
+                <!--편지 보기-->
+                <div class="lettle" style="display: none">
+                    <div class="ups"><h1 style="text-align: center">쪽지함</h1></div>
+                    <div class="downs">
+                        <table class="tables">
+                            <th>번호</th><th>아이디</th><th>내용</th>
+                            <tr><td>1</td><td>abc123</td><td><a class="modalcomeon">웹서비스 전시회입니...</a></td></tr>
+                            <tr><td>2</td><td>abc123</td><td><a class="modalcomeon">웹서비스 전시회입니...</a></td></tr>
+                            <tr><td>3</td><td>abc123</td><td><a class="modalcomeon">웹서비스 전시회입니...</a></td></tr>
+                            <tr><td>4</td><td>abc123</td><td><a class="modalcomeon">웹서비스 전시회입니...</a></td></tr>
+                            <tr><td>5</td><td>abc123</td><td><a class="modalcomeon">웹서비스 전시회입니...</a></td></tr>
+                            <tr><td>6</td><td>abc123</td><td><a class="modalcomeon">웹서비스 전시회입니...</a></td></tr>
+                        </table>
+                    </div>                        
+                </div>
+                <!--회원 탈퇴-->
+                <div class="idout" style="display: none">
+                    <div class="ups"><h1 style="text-align: center">회원 탈퇴</h1></div>
+                    <div class="outcontent">
+                        <div class="longtext1"><h2>회원탈퇴시 유의사항</h2></div>
+                    </div>
+                    <div class="reok" style="margin-top: 2px;">
+                        <form style="float: left">
+                            <input class="reok_password" type="text" placeholder="비밀번호"></input>
+                        </form>
+                        <div style="float: right">
+                            <input type="checkbox">
+                        <p>위 내용에 동의합니다.</p>
+                        <button class="button" type="button">탈퇴</button>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        <!--편지 모달 창-->
+                                <div class="plettle" style="display: none">
+                                    <div class="modal">
+                                    <div class="upss">
+                                        <button class="modalcomeout" style="float: right; border: 0px; background: inherit;" type="button">X</button>
+                                        <div class="Spicture"><img class="pictures1" src="https://instagram.ficn6-1.fna.fbcdn.net/vp/466efc55594472ab9b9ab6e885b06825/5D72B7DC/t51.2885-15/e35/57009221_306777196917572_856435609160832386_n.jpg?_nc_ht=instagram.ficn6-1.fna.fbcdn.net"></div>
+                                        <div class="subbox">
+                                            <div class="nicname"><h1>IMNOOK</h1></div>
+                                            <div class="date"><h2>2019-07-09</h2></div>
+                                        </div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="longtext2"><h2>쪽지 내용</h2></div>
+                                    </div>
+                                    <div class="downss">
+                                        <button class="button" type="button">쪽지 답장</button>
+                                        <button class="button" type="button">쪽지 삭제</button>
+                                    </div>
+                                    </div>
+                                </div>  
+    </body>
+    <script src="/javascripts/profile.js"></script>
+</html>

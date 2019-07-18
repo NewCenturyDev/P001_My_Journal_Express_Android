@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>사진 전시회 서비스 - 로그인</title>
+<link rel="stylesheet" href="/stylesheets/login.css"></link>
+<!-- 서버측과 통신하여 로그인 시도 검증-->
+<%
+if(ecode != 0) {
+%>
+<script>alert('ID나 비밀번호가 틀립니다.');</script>
+<%
+}
+%>
+</head>
+<body>
+
+	<header id="header">
+		<div id="logo">
+			<a href="/">
+				<img src="http://placehold.it/500x50">
+			</a>
+		</div>
+	</header>
+
+	<section>
+		<h2>Login</h2>
+		<form action="/login" method="POST">
+			<input id="authid" type="text" name="id" placeholder="ID"></input>
+			<input id="authpw" type="password" name="pw" placeholder="PW"></input>
+			<br/>
+			<br/>
+			<button>로그인</button>
+		</form>
+		<br/>
+		<br/>
+		<a href="/register">회원 가입 &gt&gt</a>
+		<a href="/finder">ID / PW 찾기 &gt&gt</a>
+	</section>
+
+</body>
+</html>

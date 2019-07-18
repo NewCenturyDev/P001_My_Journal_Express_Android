@@ -1,0 +1,374 @@
+html,body{
+    margin: 0;
+    height: 100%;
+    background-image: url("/images/background.png");
+  }
+
+/*네비게이션 부분*/
+.nav{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.search{
+    margin-left: 700px;
+    margin-right: 460px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+}
+
+.replytext_search{
+    background-color: rgba(0,0,0,0.6);
+    color: #fafafa;
+    display: inline-block;
+    text-align: center;
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.replytext_search::placeholder{
+    color: #fafafa;
+}
+
+.button_box{
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.button{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.profile{
+    display: inline-block;
+
+}
+
+/*아래의 박스 두개*/
+.box{
+    z-index: 1;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.left_box{
+    position: absolute;
+    top: 20%; left: 22%;
+    width: 180px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid black;
+    border-radius: 30px;
+    box-sizing: content-box;
+}
+
+.right_box{
+    position: absolute;
+    top: 20%; left: 37%;
+    width: 600px;
+    height: 550px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-sizing: content-box;
+}
+
+/*왼쪽 박스들*/
+.button_box_1{
+    text-align: center;
+    display: block;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+.b1{
+    width: 150px;
+    height: 40px;
+}
+
+/*오른쪽 박스-내정보*/
+.myinfo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 580px;
+    height: 530px;
+}
+
+.Lpicture{
+    display: block;
+    width: 200px;
+    height: 530px;
+    margin-right: 20px;
+}
+
+.picture{
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 180px;
+    height: 180px;
+}
+
+.pictures{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.picture_agree{
+    text-align: center;
+}
+
+.info{
+    display: block;
+    flex-direction: row;
+    width: 380px;
+    height: 530px;
+}
+
+.id{
+    margin-top: 100px;
+    width: 300px;
+    height: 70px;
+}
+
+.replytext_id{
+    width: 240px;
+    height: 25px;
+    border: 1px solid black;
+}
+
+.name{
+    margin-top: 2px;
+    width: 300px;
+    height: 70px;
+}
+
+.replytext_name{
+    width: 240px;
+    height: 25px;
+    border: 1px solid black;
+}
+
+.password{
+    margin-top: 2px;
+    width: 300px;
+    height: 70px;
+}
+
+.replytext_password{
+    width: 240px;
+    height: 25px;
+    border: 1px solid black;
+}
+
+.state{
+    margin-top: 2px;
+    width: 300px;
+    height: 140px;
+}
+
+.replytext_state{
+    width: 280px;
+    height: 90px;
+    border: 1px solid black;
+}
+
+.agree{
+    float: right;
+    margin-right: 10px;
+}
+
+/*오른쪽 박스-구독*/
+.sub{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 580px;
+    height: 530px;
+}
+
+.people{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 580px;
+    height: 110px;
+}
+
+.Spicture{
+    width: 110px;
+    height: 110px;
+}
+
+.pictures1{
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.subbox{
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.nicname{
+    width: 10px;
+}
+
+.realname{
+}
+
+.move{
+    display: inline;
+    margin-left: 50px;
+}
+
+.remove{
+    display: inline;
+    margin-left: 20px;
+}
+
+/*오른쪽 박스-편지*/
+.lettle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 580px;
+    height: 530px;
+}
+
+.ups{
+    width: 580px;
+    height: 60px;
+}
+
+.downs{
+    width: 580px;
+    height: 470px;
+}
+
+.tables{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 580px;
+    height: 460px;
+    text-align: center;
+    border: 1px;
+    border-color: #fafafa;
+}
+
+th{
+    background-color: rgba(0,0,0,0.3);
+}
+
+td{
+    background-color: rgba(223, 213, 213, 0.788);
+}
+
+/*모달창*/
+.plettle{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1,1,1,0.7);
+}
+
+.modal{
+    z-index: 11;
+    display: block;
+    position: center;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background-color: rgba(255, 255, 255,100);
+    border-radius: 5%;
+}
+
+.upss{
+    width:500px;
+    height: 100px;
+}
+
+.middle{
+    width: 500px;
+    height: 300px;
+}
+
+.longtext2{
+    border: 1px;
+    border-color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 400px;
+    height: 300px;
+}
+
+.downss{
+    width: 500px;
+    height: 100px;
+}
+
+/*오른쪽 박스-회원 탈퇴*/
+.idout{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 580px;
+    height: 530px;
+}
+
+.outcontent{
+    width: 580px;
+    height: 320px;
+}
+
+.longtext1{
+    text-align: center;
+    width: 560px;
+    height: 320px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fafafa;
+}
+
+.reok{
+    width: 580px;
+    height: 150px;
+}
+
+.reok_password{
+    
+}
