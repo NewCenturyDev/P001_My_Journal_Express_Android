@@ -4,65 +4,77 @@ html,body{
     background-image: url("/images/background.png");
   }
 
-/*네비게이션 부분*/
-.nav{
-    z-index: 2;
-    position: fixed;
-    top: 0;
+  header {
+    z-index: 1;
     width: 100%;
-    height: 55px;
-    background-color: rgba(0,0,0,0.4);
+    height: 50px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: row;
 }
 
-.search{
-    margin-left: 700px;
-    margin-right: 460px;
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    display: inline-block;
+ /* header의 로고 및 room 버튼 부분 */
+#left_h {
+    width: 37%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
 }
 
-.replytext_search{
-    background-color: rgba(0,0,0,0.6);
-    color: #fafafa;
-    display: inline-block;
-    text-align: center;
-    width: 130px;
-    height: 30px;
-    border-radius: 5px;
-    border: 0px;
+header > #left_h > div{
+    height: 50px;
 }
 
-.replytext_search::placeholder{
-    color: #fafafa;
+ /* header의 검색 부분 */
+#center_h {
+    width: 55%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    left: 3%;
+    position: relative;
 }
 
-.button_box{
-    text-align: center;
-    display: inline-block;
-    margin-right: 10px;
+#center_h > #find {
+    width: 45%;
 }
 
-.button{
-    width: 100px;
-    height: 35px;
-    border-radius: 20px;
-    border: 0px;
-    background-color: rgba(0,0,0,0.6);
-    font-size: 16px;
+ /* header의 search 디자인 부분 */
+#center_h > div > form > input {
+    width: 90%;
     color: white;
-    text-align: center;
-    display: inline-block;
+    margin-top: 6px;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0 10px;
+    outline: 0;
+    background-color: rgba(0,0,0,0.6);
 }
 
-.button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ /* header의 사용자 버튼 */
+#right_h {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    float: right;
+    display: flex;
+    flex-direction: row;
 }
 
-.profile{
-    display: inline-block;
+#right_h > div {
+    margin-right: 7%;
+}
 
+#right_h > div > button {
+    margin-top: 7%;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 13px;
+    outline: 0;
+    background: none;
 }
 
 /*아래의 박스 두개*/
@@ -96,15 +108,22 @@ html,body{
 }
 
 /*왼쪽 박스들*/
-.button_box_1{
+.button_box{
     text-align: center;
     display: block;
-    margin-left: 5px;
+    margin: 0 15px;
     margin-top: 15px;
-}
-.b1{
     width: 150px;
     height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
 /*오른쪽 박스-내정보*/

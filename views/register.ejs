@@ -4,44 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>사진 전시회 서비스 - 회원가입</title>
 <link rel="stylesheet" href="/stylesheets/register.css"></link>
-
-<!-- 서버측과 통신하여 회원가입 양식 검증-->
-<%
-if(ecode == 1) {
-%>
-<script>alert('회원가입 양식의 모든 필드를 채워주셔야 합니다. 빈 칸은 허용되지 않습니다!');</script>
-<%
-}
-%>
-<%
-if(ecode == 2) {
-%>
-	<script>alert('"비밀번호" 필드와 "비밀번호 확인" 필드의 값이 서로 다릅니다!');</script>
-<%
-}
-%>
-<%
-if(ecode == 3) {
-%>
-	<script>alert('전화번호는 숫자만 입력하여 주십시오! ("-"는 생략해 주십시오.)');</script>
-<%
-}
-%>
-<%
-if(ecode == 4) {
-%>
-	<script>alert('이메일 양식이 올바르지 않습니다! ("example@service.com" 형식으로 입력해 주십시오)');</script>
-<%
-}
-%>
-<%
-if(ecode == 5) {
-%>
-	<script>alert('DB 오류. 나중에 다시 시도하세요.');</script>
-<%
-}
-%>
-
 </head>
 <body>
 

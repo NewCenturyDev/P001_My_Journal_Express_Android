@@ -6,19 +6,45 @@
         <link rel="stylesheet" href="/stylesheets/profile.css">
     </head>
     <body>
-        <div class="nav">
-            <form class="search">
-                <input class="replytext_search" type="text" placeholder="search"></input> 
-            </form>
-            <div class="button_box"><button class="button" type="button">둘러보기</button></div>
-            <div class="profile"><p>profile</p></div>
-        </div>
+        <header>
+            <div id="left_h">
+                <div id="logo">
+                    <a href="/">
+                        <img src="http://placehold.it/220x50">
+                    </a>
+                </div>
+            </div>
+            <div id="center_h">
+                <div id="find">
+                    <form action="sub_search.html" method="post">
+                        <input type="text" name="search" placeholder="search">
+                        </form>
+                    </div>
+                </div>
+            <div id="right_h">
+                <div>
+                    <button type="button" id="logout">
+                        <img src="/images/logout.png" width="30px">
+                    </button>
+                </div>
+                <div>
+                    <button type="button" id="profile">
+                        <img src="/images/profile.png" width="30px">
+                    </button>
+                </div>
+                <div>
+                    <button type="button" id="people">
+                        <img src="/images/people.png" width="45px">
+                    </button>
+                </div>
+            </div>
+        </header>
         <div class="box">
             <div class="left_box">
-                <div class="button_box_1"><button class="button b1 1" type="button">정보 수정</button></div>
-                <div class="button_box_1"><button class="button b1 2" type="button">구독 수정</button></div>
-                <div class="button_box_1"><button class="button b1 3" type="button">쪽지함</button></div>
-                <div class="button_box_1"><button class="button b1 4" type="button">회원탈퇴</button></div>
+                <div class="button_box" onclick="myDisplay();">정보 수정</div>
+                <div class="button_box" onclick="subDisplay();">구독 수정</div>
+                <div class="button_box" onclick="letDisplay();">쪽지함</div>
+                <div class="button_box" onclick="idDisplay();">회원탈퇴</div>
             </div>
             <div class="right_box">
                 <!--정보 수정-->
@@ -85,13 +111,13 @@
                         <div class="longtext1"><h2>회원탈퇴시 유의사항</h2></div>
                     </div>
                     <div class="reok" style="margin-top: 2px;">
-                        <form style="float: left">
-                            <input class="reok_password" type="text" placeholder="비밀번호"></input>
+                        <form action="/resign" method="POST">
+                            <input id="authid" type="text" name="id" placeholder="ID"></input>
+			                <input id="authpw" type="password" name="pw" placeholder="PW"></input>
+                            <button class="button">회원 탈퇴</button>
                         </form>
-                        <div style="float: right">
-                            <input type="checkbox">
-                        <p>위 내용에 동의합니다.</p>
-                        <button class="button" type="button">탈퇴</button>
+                        <div>
+                            <p>회원탈퇴를 요청한 이용객은 위 사항에 동의한 것으로 간주합니다.</p>
                         </div>
                     </div>
                 </div>

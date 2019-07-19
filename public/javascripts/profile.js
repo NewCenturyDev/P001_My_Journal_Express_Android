@@ -2,13 +2,11 @@ var myinfo = document.getElementsByClassName("myinfo")[0];
 var sub = document.getElementsByClassName("sub")[0];
 var lettle = document.getElementsByClassName("lettle")[0];
 var idout = document.getElementsByClassName("idout")[0];
-var button1 = document.getElementsByClassName("button b1 1")[0];
-var button2 = document.getElementsByClassName("button b1 2")[0];
-var button3 = document.getElementsByClassName("button b1 3")[0];
-var button4 = document.getElementsByClassName("button b1 4")[0];
 var modalcomeon = document.getElementsByClassName("modalcomeon")[0];
 var plettle = document.getElementsByClassName("plettle")[0];
 var modalcomeout = document.getElementsByClassName("modalcomeout")[0];
+var profile = document.getElementById('profile');
+var logout = document.getElementById('logout');
 
 function myDisplay(){
     console.log(myinfo.style.display);
@@ -64,9 +62,17 @@ function modalnoneDisplay(){
     }
 }
 
-button1.addEventListener("click", myDisplay);
-button2.addEventListener("click", subDisplay);
-button3.addEventListener("click", letDisplay);
-button4.addEventListener("click", idDisplay);
+function goProfile() {
+    location.href = "/contents";
+}
+
+function logOut() {
+    alert('로그아웃 되었습니다!');
+    location.href = "/logout";
+}
+
+
 modalcomeon.addEventListener("click", modalDisplay);
 modalcomeout.addEventListener("click", modalnoneDisplay);
+profile.addEventListener("click", goProfile);
+logout.addEventListener("click", logOut);
