@@ -8,8 +8,8 @@ body{
 }
 #title{
     width: 50%;
+    height: 10%;
     margin: 0 25%;
-    margin-top: 10%;
     font-size: 120px;
     font-weight: bold;
     line-height: 120px;
@@ -18,15 +18,15 @@ body{
 }
 form{
     width: 80%;
+    height: 75%;
     margin: 0 10%;
     margin-top: 5%;
 }
 form > input{
     display: block;
     width: 85%;
-    height: 10%;
+    height: 8.5%;
     margin: 0 7.5%;
-    margin-top: 5%;
     background-color: inherit;
     border: 0;
     border-bottom: 5px solid white;
@@ -42,9 +42,9 @@ form > input::placeholder{
 form > p{
     display: block;
     width: 80%;
-    height: 10%;
+    height: 20%;
     margin: 0 10%;
-    margin-top: 5%;
+    margin-top: 2.5%;
     color: white;
     font-size: 40px;
     line-height: 50px;
@@ -53,9 +53,9 @@ form > p{
 form > button{
     display: block;
     width: 50%;
-    height: 15%;
+    height: 8.5%;
     margin: 0 25%;
-    margin-top: 5%;
+    margin-top: 2.5%;
     background-color: rgba(255,100,100,0.6);
     border: 5px solid rgb(255,100,100);
     border-radius: 10px;
@@ -67,14 +67,13 @@ form > button{
 }
 #links{
     width: 80%;
-    height: 20%;
+    height: 10%;
     margin: 0 10%;
-    margin-top: 5%;
     text-align: center;
 }
 #links > a{
-    margin-top: 10%;
-    margin-right: 10%;
+    display: block;
+    margin-top: 2.5%;
     font-size: 50px;
     color: white;
     line-height: 60px;
