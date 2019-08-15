@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:background=""-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="로딩화면입니다. \n (추후 이미지 추가 예정) \n My Studio Express Mobile"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

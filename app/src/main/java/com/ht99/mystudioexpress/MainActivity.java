@@ -2,6 +2,7 @@ package com.ht99.mystudioexpress;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -16,8 +17,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent loading = new Intent(this, LoadingActivity.class);
+        startActivity(loading);
+
         mWebView = (WebView)findViewById(R.id.web);
-        mWebView.loadUrl("file:///android_asset/login.html");
+        mWebView.loadUrl("http://15.164.98.163:3000/mobile");
         mWebView.setWebViewClient(new WebViewClient());
         //화면 비율 조정
         mWebView.getSettings().setUseWideViewPort(true);
