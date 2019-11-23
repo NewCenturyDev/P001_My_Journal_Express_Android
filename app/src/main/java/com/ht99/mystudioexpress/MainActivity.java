@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(loading);
 
         mWebView = (WebView)findViewById(R.id.web);
-        mWebView.loadUrl("http://15.164.98.163:3000/mobile");
+        mWebView.loadUrl("http://52.79.169.66:3000/mobile");
         mWebView.setWebViewClient(new WebViewClient());
         //화면 비율 조정
         mWebView.getSettings().setUseWideViewPort(true);
